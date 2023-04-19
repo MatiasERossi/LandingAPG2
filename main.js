@@ -42,7 +42,7 @@ function enviarPedido() {
   } else{
   items.textContent = ""
   preciototal.textContent = ""
-  swal("Muchas gracias!","Tu pedido ya a sido procesado.","success")
+  swal("Muchas gracias!","Tu pedido ya ha sido procesado.","success")
   arraydesuma = []
 }}
 
