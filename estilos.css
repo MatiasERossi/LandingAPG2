@@ -45,7 +45,7 @@ li {
 }
 
 .empresa {
-  padding-top: 80px;
+  padding-top: 100px;
   display: flex;
 }
 
@@ -58,6 +58,28 @@ li {
   background-color: #000000;
   color: #ffffff;
 }
+.navbar{
+  background-color: #461818;
+  height: 100px;
+}
+.navbar-collapse{
+  flex-basis: 100%;
+ flex-grow: 1;
+ align-items: center;
+ display: flex;
+ padding: 5px;
+ margin-top: 7px;
+ justify-content: end;
+}
+
+.nav-link{
+color:#ffffff !important; 
+}
+.nav-item{
+display: flex;
+justify-content: end;
+padding-right: 10px;
+}
 
 .empresa__titulo {
   padding-top: 2rem;
@@ -66,9 +88,9 @@ li {
 
 .empresa__p {
   padding: 0 2rem;
-  font-family: "Caveat", cursive;
-  font-weight: 900;
-  font-size: 22px;
+  font-family: "Montserrat", cursive;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .empresa__div2 {
@@ -163,6 +185,10 @@ li {
   width: 200px;
   border-radius: 20px 20px 0 0;
   height: 200px;
+}
+
+.aros{
+margin-bottom: -2rem;
 }
 
 .menu__titulocard {
@@ -374,7 +400,7 @@ li {
   padding: 1rem;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 991px) {
 
   .header {
     height: 90px;
@@ -420,6 +446,19 @@ li {
     width: 80%;
     font-size: 16px;
   }
+  .menu__card {
+    width: 300px;
+  }
+  .menu__datos {
+    height: 290px;}
+  
+    .navbar-collapse{
+      background: linear-gradient(#461818,#cd5c5c);
+      justify-content: center;
+    }
+ .navbar-nav{
+  align-items: center;
+ }
 }
 
 @media screen and (max-width: 600px) {

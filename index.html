@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
-    <link rel="stylesheet" href="estilos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,33 +21,44 @@
       rel="stylesheet"
     />
     <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="estilos.css" />
     <title>Fast Food Truck</title>
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav">
-        <img src="assets/imagen (1).png" alt="" class="header__nav_img" />
-        <ul class="header__nav_ul">
-          <div class="header__div_li">
-            <li class="header__nav_li">
-              <a class="header__nav_a" href="#empresa">Empresa</a>
-            </li>
-            <li class="header__nav_li">
-              <a class="header__nav_a" href="#nosotros">Nosotros</a>
-            </li>
-            <li class="header__nav_li">
-              <a class="header__nav_a" href="#menu">Menú</a>
-            </li>
-            <li class="header__nav_li">
-              <a class="header__nav_a" href="#contacto">Contacto</a>
-            </li>
-            <li class="header__nav_li header__nav_li-act">
-              <a class="header__nav_a" href="#agradecimientos"
-                >Agradecimientos</a
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/imagen (1).png" alt="" class="header__nav_img" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
               >
             </li>
-          </div>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#agradecimientos">Agradecimientos</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -58,12 +68,12 @@
           <h1 class="empresa__titulo">Fast Food Truck</h1>
           <p class="empresa__p">
             Somos una empresa familiar a la que un día se nos dió por perseguir
-            un sueño, teníamos el anhelo de crear un lugar donde se sirva comida rica,
-            confiable, con una buena atención y a buen precio. Con esta premisa
-            fue que nació Fast Food Truck, por allá en julio de 1988. Nuestro
-            objetivo siempre fue satisfacer las necesidades de nuestros clientes
-            de forma efectiva, utilizando productos frescos, de primera calidad y
-            brindando una atención de excelencia con responsabilidad y
+            un sueño, teníamos el anhelo de crear un lugar donde se sirva comida
+            rica, confiable, con una buena atención y a buen precio. Con esta
+            premisa fue que nació Fast Food Truck, por allá en julio de 1988.
+            Nuestro objetivo siempre fue satisfacer las necesidades de nuestros
+            clientes de forma efectiva, utilizando productos frescos, de primera
+            calidad y brindando una atención de excelencia con responsabilidad y
             cumplimiento. La experiencia adquirida a través de los años, nos
             hizo entender que el secreto de nuestro éxito es y sera la dicha de
             ver a nuestros clientes complacidos.
@@ -240,7 +250,7 @@
                 value="Aros de cebolla"
                 style="display: none"
               />
-              <ul>
+              <ul class="aros">
                 <li>Aros de Cebolla</li>
                 <li>Salsa Barbacoa</li>
                 <li>Semillas de Sesamo</li>
@@ -423,12 +433,16 @@
         <p>© Fast Food Truck - Todos los Derechos Reservados 2023</p>
       </div>
     </footer>
-
     <script src="home.js"></script>
     <script src="main.js"></script>
     <script src="api.js" type="module"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="scroll.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
